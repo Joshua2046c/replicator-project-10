@@ -68,7 +68,7 @@
       "label": "蜗牛卡 Logo",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "1f3a282f6f89da5f47b72a3451198aaa6629e9a98a0c96d063e076bee9d21cfc",
+      "shapeHash": "f3c5e29300882299f36ead525f1fa8d0486bb33e640bd13c0715304fcae7eaa4",
       "transform": {
         "positionMm": [
           0,
@@ -92,7 +92,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-10-22T09:08:55.387Z",
+  "updatedAt": "2026-10-23T12:32:23.792Z",
   "parameters": {
     "card": {
       "card_length": 120,
@@ -114,7 +114,7 @@
     },
     "logo_insert": {
       "logo_red_height": 1,
-      "logo_white_height": 1.3
+      "logo_white_height": 1.7
     }
   }
 }

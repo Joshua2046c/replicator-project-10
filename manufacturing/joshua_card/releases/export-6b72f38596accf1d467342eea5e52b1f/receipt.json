@@ -1,31 +1,31 @@
 {
   "designId": "joshua_card",
-  "revision": "d388283b68c289f40c30b189bc8ca57333337b257444773b307e1a696e58b61a",
+  "revision": "cd7b25ee501965644d8c367f8fc3263d0d6602cb0b57ec6274fba0802ce68dc8",
   "schemaVersion": 2,
-  "exportId": "export-f8134717f77c2f944dc94c3884a46695",
-  "generatedAt": "2026-10-22T14:16:09.467Z",
-  "designSha256": "fce22f1623cc913115fd80974241559d5f121488369a3a5c77bac7a571f972f7",
+  "exportId": "export-6b72f38596accf1d467342eea5e52b1f",
+  "generatedAt": "2026-10-23T12:33:37.864Z",
+  "designSha256": "47a4cd51cf86b7099ea36f386b1af62c39f2fa87b20aa14af9ed0a3fd5762153",
   "role": "joshua_lanyard_card",
-  "stateHash": "09a85619423828f465476e081312b30340f2a671b5b35c10942e62c36c2051df",
+  "stateHash": "9911b6328115828b182838abbe6b84edccd9340b13538bcf507775087329a4c0",
   "stateManifest": {
     "schemaVersion": 3,
     "designId": "joshua_card",
     "role": "joshua_lanyard_card",
     "design": {
-      "revision": "d388283b68c289f40c30b189bc8ca57333337b257444773b307e1a696e58b61a",
-      "designSha256": "b1e7727c148c8b7fdfba2bbcef2ce54417a487462c21d600ed92d215d271dcbd",
-      "manifestSha256": "5b55d39c0c9294a8789dccfea8c06d5beb67e9400fe352d0be7fdcf63e2e9a45",
-      "stepSha256": "eee682613a27fe694c63bd1025781b71f6d3a91884a6636867193f6783be5ea3",
+      "revision": "cd7b25ee501965644d8c367f8fc3263d0d6602cb0b57ec6274fba0802ce68dc8",
+      "designSha256": "4c5df3e8eae11e4e3a3bd71cc197565c8e662965ce220e17b2a2bf454a8a7999",
+      "manifestSha256": "5c69e1b8c35caaf9934d04640c310acce79066ed7cc044eb5efc4c77e2a579b8",
+      "stepSha256": "573685470ff33e4ce9fe6c5788f875ef4633590a8c7afaf4079aeda2b352ab4d",
       "pcbReleases": []
     },
     "brief": {
       "path": "design/joshua_card/README.md",
-      "sha256": "534ea506a39cd0ec07f1db5658f7727522491ec576aeb733b8c5e5e7851fc686"
+      "sha256": "724f11fe1086b74365140d2d66546fff122b20fe96a766edb472d1ae152b4627"
     },
     "requirement": {
       "artifactContractPath": "product/contract.json",
-      "artifactContractSha256": "9f843a984bafc0b9f03934da0a8bf2558d5db418ae4ccb30048f93f3d778ea1d",
-      "designRequirementSha256": "cb82516da274031dcd89a3e520cb94e86ce9ab25aacc1118fc38ec18c1cb66ba",
+      "artifactContractSha256": "6781a9172e444e7afa659f6390908e53c01065d2d89ecd148ce18ea0d2459ba6",
+      "designRequirementSha256": "5762714f99c8dc96faadaa726f09943817022a4bd24ea298896e1cb50da1bfe0",
       "inputs": [
         {
           "role": "external-reference",
@@ -56,11 +56,11 @@
         "step"
       ]
     },
-    "stateHash": "09a85619423828f465476e081312b30340f2a671b5b35c10942e62c36c2051df"
+    "stateHash": "9911b6328115828b182838abbe6b84edccd9340b13538bcf507775087329a4c0"
   },
   "buildArtifacts": {
-    "manifestSha256": "5b55d39c0c9294a8789dccfea8c06d5beb67e9400fe352d0be7fdcf63e2e9a45",
-    "stepSha256": "eee682613a27fe694c63bd1025781b71f6d3a91884a6636867193f6783be5ea3"
+    "manifestSha256": "5c69e1b8c35caaf9934d04640c310acce79066ed7cc044eb5efc4c77e2a579b8",
+    "stepSha256": "573685470ff33e4ce9fe6c5788f875ef4633590a8c7afaf4079aeda2b352ab4d"
   },
   "exportAlgorithm": {
     "version": 1,
@@ -73,7 +73,7 @@
   "assetHashes": {},
   "shapeHashes": {
     "card_body": "822e97fcf2542e9ca468e8c8aa7734215dae451921825b9e6d7dc5b650eafb1f",
-    "joshua_logo": "3aae6a15fe68ea378f76fc95d95e8708dce08e7662a949ce79f268c84bbeace9"
+    "joshua_logo": "60712603fbc64b6cd3a725b9d5aaae17acc6778ffd7abd1a9812640518a4bf4d"
   },
   "runtime": {
     "manifestHash": "ab96ab4a8cb2db98edb9ee2d6904f4abce711776fb5a1af03a7266313006c5d2",
@@ -84,10 +84,10 @@
   },
   "artifacts": [
     {
-      "path": "manufacturing/joshua_card/releases/export-f8134717f77c2f944dc94c3884a46695/model.step",
+      "path": "manufacturing/joshua_card/releases/export-6b72f38596accf1d467342eea5e52b1f/model.step",
       "role": "model/step",
-      "sha256": "eee682613a27fe694c63bd1025781b71f6d3a91884a6636867193f6783be5ea3",
-      "sizeBytes": 4751885
+      "sha256": "573685470ff33e4ce9fe6c5788f875ef4633590a8c7afaf4079aeda2b352ab4d",
+      "sizeBytes": 4751887
     }
   ],
   "interference": {
@@ -109,9 +109,9 @@
     "algorithm": "hmac-sha256",
     "keyId": "81abdbde9b80e7eed6a5fa6ba4c4c956",
     "projectId": "6c3829a6-1260-4138-bcc7-cede50abaa99",
-    "receiptPath": "manufacturing/joshua_card/releases/export-f8134717f77c2f944dc94c3884a46695/receipt.json",
-    "payloadSha256": "4a9d4d4937d017479bc5e76817696b4431f0df36f064a4e131309e400ed08eaa",
-    "mac": "5c1654cc8ef92791ac29b13f484ce0098d646f41938b8caaad04a92586daea4a"
+    "receiptPath": "manufacturing/joshua_card/releases/export-6b72f38596accf1d467342eea5e52b1f/receipt.json",
+    "payloadSha256": "8b270e29db7d94719be7ee293290e1d54e0686ea6ed9d3965e7ce445e33bee30",
+    "mac": "2cf0d7687816e8769995828e4d0cfbd276148322663c37713ab36a0e8b4ee009"
   },
   "status": "handoff"
 }

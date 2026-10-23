@@ -68,7 +68,7 @@
       "label": "小红书 Logo",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "e0e62340186d8c290b17a38f4a34eeed5b5aee7c197dd5bdb86c50f10310843e",
+      "shapeHash": "407a9efea0ac82bfcfc71e48ebee260fb2599ec06191ba2f5adced0c2d01054a",
       "transform": {
         "positionMm": [
           0,
@@ -92,7 +92,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-10-21T23:55:51.780Z",
+  "updatedAt": "2026-10-23T12:31:30.816Z",
   "parameters": {
     "plaque": {
       "plate_height": 95,
@@ -103,7 +103,7 @@
     },
     "logo_insert": {
       "logo_red_height": 1,
-      "logo_white_height": 1.3
+      "logo_white_height": 1.7
     }
   }
 }

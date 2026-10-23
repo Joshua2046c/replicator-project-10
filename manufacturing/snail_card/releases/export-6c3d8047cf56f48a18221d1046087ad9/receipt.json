@@ -1,30 +1,30 @@
 {
   "designId": "snail_card",
-  "revision": "2a93298e6d745d68265e5bc43136952488a6eb6e630e3301f1863932b593aa24",
+  "revision": "6347c1a6796bffd2071088682f94341f7161b4e475c8a422a6fdc36834e99bb8",
   "schemaVersion": 2,
-  "exportId": "export-2b5b53f89110caca2254103f669da9a4",
-  "generatedAt": "2026-10-22T09:08:55.387Z",
-  "designSha256": "6d8a39ec80247f62c258f1b40d0ccb8b2d7f64b4c6e61e88295cefac4365b097",
+  "exportId": "export-6c3d8047cf56f48a18221d1046087ad9",
+  "generatedAt": "2026-10-23T12:32:23.792Z",
+  "designSha256": "a01d3c9223a8cccd92424c569ad1cc321aeeff3cf16015b1d4ae9d1058ef171b",
   "role": "lanyard_qr_card",
-  "stateHash": "3ce56152e589139d1acd67f4952e4932208360d25dbbdb01da8f51fe5e9cd9e1",
+  "stateHash": "083b5943f63c5a5d70ea67c2ee9981c9e283792271865b2f9596d38a82ba1b2a",
   "stateManifest": {
     "schemaVersion": 3,
     "designId": "snail_card",
     "role": "lanyard_qr_card",
     "design": {
-      "revision": "2a93298e6d745d68265e5bc43136952488a6eb6e630e3301f1863932b593aa24",
-      "designSha256": "7da0db26381316d0c067e22945bd4040a59c6bc57935cc17961ab47b52f2ae66",
-      "manifestSha256": "0bf2ac569cae04f4d6d1b68b489d71b0a7a750444ecbe358c8e05f9466ca31b8",
-      "stepSha256": "4f70271e3da4d20e3fd393256da82683818c418237909d159115dcc29db6bf0a",
+      "revision": "6347c1a6796bffd2071088682f94341f7161b4e475c8a422a6fdc36834e99bb8",
+      "designSha256": "bc684e7bb11dbd7351151a59fb3d3d17d34492684262b5f984a92d51d127d775",
+      "manifestSha256": "605e8acfc27631c149b8205ff7e7c9d54913959d3e82604046adee086cef8e08",
+      "stepSha256": "10a052f08332640ee02e86d58e62165768fbcda039e685cdb0a643f2ede967ef",
       "pcbReleases": []
     },
     "brief": {
       "path": "design/snail_card/README.md",
-      "sha256": "ffb86af26309e279e45b54e4fd3fd6ddcc62772df5a6f455c6821a8161475dc2"
+      "sha256": "a171b8f1ac5deba77ec08d493fef750e8f2b283eeb45418bd354c5922d62f20e"
     },
     "requirement": {
       "artifactContractPath": "product/contract.json",
-      "artifactContractSha256": "6c5f1326bca11a3fac66356c53170c2c68bf6df3b7a7542a939abf8af0911697",
+      "artifactContractSha256": "904323eb1ef420303c0de61ae3030dfbd9fc1851f7178e1de2e2e39a77a580de",
       "designRequirementSha256": "43e7ac7b933d1d5cf7d01160509ad3a0206d8afba0106b246f471a19ca167ea1",
       "inputs": [
         {
@@ -56,11 +56,11 @@
         "step"
       ]
     },
-    "stateHash": "3ce56152e589139d1acd67f4952e4932208360d25dbbdb01da8f51fe5e9cd9e1"
+    "stateHash": "083b5943f63c5a5d70ea67c2ee9981c9e283792271865b2f9596d38a82ba1b2a"
   },
   "buildArtifacts": {
-    "manifestSha256": "0bf2ac569cae04f4d6d1b68b489d71b0a7a750444ecbe358c8e05f9466ca31b8",
-    "stepSha256": "4f70271e3da4d20e3fd393256da82683818c418237909d159115dcc29db6bf0a"
+    "manifestSha256": "605e8acfc27631c149b8205ff7e7c9d54913959d3e82604046adee086cef8e08",
+    "stepSha256": "10a052f08332640ee02e86d58e62165768fbcda039e685cdb0a643f2ede967ef"
   },
   "exportAlgorithm": {
     "version": 1,
@@ -73,7 +73,7 @@
   "assetHashes": {},
   "shapeHashes": {
     "card_body": "a97e5d0dceb6a9874be8e1354abb272e492814e7b5a9372aa52ca5ad79e7b6a4",
-    "snail_logo": "1f3a282f6f89da5f47b72a3451198aaa6629e9a98a0c96d063e076bee9d21cfc"
+    "snail_logo": "f3c5e29300882299f36ead525f1fa8d0486bb33e640bd13c0715304fcae7eaa4"
   },
   "runtime": {
     "manifestHash": "ab96ab4a8cb2db98edb9ee2d6904f4abce711776fb5a1af03a7266313006c5d2",
@@ -84,10 +84,10 @@
   },
   "artifacts": [
     {
-      "path": "manufacturing/snail_card/releases/export-2b5b53f89110caca2254103f669da9a4/model.step",
+      "path": "manufacturing/snail_card/releases/export-6c3d8047cf56f48a18221d1046087ad9/model.step",
       "role": "model/step",
-      "sha256": "4f70271e3da4d20e3fd393256da82683818c418237909d159115dcc29db6bf0a",
-      "sizeBytes": 5197647
+      "sha256": "10a052f08332640ee02e86d58e62165768fbcda039e685cdb0a643f2ede967ef",
+      "sizeBytes": 5197655
     }
   ],
   "interference": {
@@ -109,9 +109,9 @@
     "algorithm": "hmac-sha256",
     "keyId": "81abdbde9b80e7eed6a5fa6ba4c4c956",
     "projectId": "6c3829a6-1260-4138-bcc7-cede50abaa99",
-    "receiptPath": "manufacturing/snail_card/releases/export-2b5b53f89110caca2254103f669da9a4/receipt.json",
-    "payloadSha256": "683ed20790507498d36494f86dc9543b6bdc8bc5b57ea1a002283888cb7edea5",
-    "mac": "5017d7f2d76b9caa7571ebdb8f95682653619286eff210eb5efbb8fd7dcd87e7"
+    "receiptPath": "manufacturing/snail_card/releases/export-6c3d8047cf56f48a18221d1046087ad9/receipt.json",
+    "payloadSha256": "ed32d94a52562b5e6f8f482b24d260b38541e30724d3e5da2f58ef123689bee3",
+    "mac": "db6ef816c3521286819b0b709ac43f89ab7061f208045ffe3b7166608225c0a8"
   },
   "status": "handoff"
 }

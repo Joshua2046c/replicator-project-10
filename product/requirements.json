@@ -69,12 +69,12 @@
       "source": "user"
     },
     "logo_white_height_mm": {
-      "value": 1.3,
-      "source": "user"
+      "value": 1.7,
+      "source": "default"
     },
     "logo_height_datum": {
-      "value": "红色及白字顶面均以底板正面为零基准；白字高于红底 0.3 mm",
-      "source": "default"
+      "value": "三套牌子的白字均高出红底 0.7 mm；红底保持原高度，高出卡面 1 mm，含槽内 0.6 mm 的红底总厚度 1.6 mm；白字顶面高出卡面 1.7 mm",
+      "source": "user"
     },
     "logo_width_mm": {
       "value": 27.866666666666667,
@@ -112,7 +112,7 @@
       "source": "default"
     },
     "logo_mounting": {
-      "value": "logo 作为独立嵌件，红底向下延伸 0.6 mm 嵌入凹槽，少量胶固定；装好后红底及白字分别高出原牌面 1 mm、1.3 mm",
+      "value": "logo 作为独立一体嵌件，红底向下延伸 0.6 mm 嵌入凹槽，少量胶固定；红底总厚 1.6 mm，装好后红底及白字分别高出牌面 1 mm、1.7 mm",
       "source": "default"
     },
     "plate_height_mm": {
@@ -180,9 +180,10 @@
     "snail_card_logo_heights_mm": {
       "value": {
         "red_above_card": 1,
-        "white_above_card": 1.3
+        "white_above_card": 1.7,
+        "white_above_red": 0.7
       },
-      "source": "default"
+      "source": "user"
     },
     "snail_card_layout_mm": {
       "value": {
@@ -230,12 +231,12 @@
       "source": "user"
     },
     "joshua_card_logo_letter_relief_mm": {
-      "value": 0.8,
+      "value": 0.7,
       "source": "user"
     },
     "joshua_card_logo_letter_datum": {
-      "value": "小红书白字相对红底顶面凸起 0.8 mm；红底高出卡面 1 mm，白字高出卡面 1.8 mm",
-      "source": "default"
+      "value": "白字高出红底 0.7 mm；红底保持原高，高出卡面 1 mm，红底总厚 1.6 mm；白字顶面高出卡面 1.7 mm",
+      "source": "user"
     },
     "joshua_card_relief_height_mm": {
       "value": 0.8,
@@ -266,6 +267,14 @@
         "clearance_per_side": 0.2
       },
       "source": "default"
+    },
+    "joshua_card_logo_red_height_mm": {
+      "value": 1,
+      "source": "user"
+    },
+    "logo_letter_relief_mm": {
+      "value": 0.7,
+      "source": "user"
     }
   },
   "open_questions": []

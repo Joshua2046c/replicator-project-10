@@ -1,30 +1,30 @@
 {
   "designId": "qr_plaque",
-  "revision": "72af4db4165abac06fdcc1f107600af5dc08bff21f1064b916e1cbeb1020b9ab",
+  "revision": "6884a45e6191e2d76c5e379f33ddbe80d14939e1b2ef8b01fe030ff061f1c07a",
   "schemaVersion": 2,
-  "exportId": "export-3b54dd424a005f37ed97fb09d19eb2b5",
-  "generatedAt": "2026-10-21T23:55:51.780Z",
-  "designSha256": "fe92a6a8d0093d5124c396b5c3ddff5edfe71fcf58bb31d5e7d535ed481190ca",
+  "exportId": "export-5da219cbfde62eade61c3f322c28237d",
+  "generatedAt": "2026-10-23T12:31:30.816Z",
+  "designSha256": "d0f27eac97dd25f49af016d861a4b2cdedd7ae5ae6aefe18538353dee3121344",
   "role": "qr_plaque",
-  "stateHash": "2cdfff50df78c1113d8e07d3bfed97fc77c52300838d0dd6eddcac139679159c",
+  "stateHash": "de98226e1b22f93cf452c2fe12848fc85879d5e4954aadd1acfc20b5179be966",
   "stateManifest": {
     "schemaVersion": 3,
     "designId": "qr_plaque",
     "role": "qr_plaque",
     "design": {
-      "revision": "72af4db4165abac06fdcc1f107600af5dc08bff21f1064b916e1cbeb1020b9ab",
-      "designSha256": "df8319c9966774db1636aca5f4330b124fc72a0893d4abc1a20b9fa662c895d2",
-      "manifestSha256": "c24f90a85ee1d82d945deeaabb572124b18d5082f41d9448d3095393b0d2f155",
-      "stepSha256": "0455ef154f1b2d6b56dc1d78c83c3ced132c70109f01beaac84f71314e38133c",
+      "revision": "6884a45e6191e2d76c5e379f33ddbe80d14939e1b2ef8b01fe030ff061f1c07a",
+      "designSha256": "f130cab3960433d56981573a1698c9547f7af417964014b88c1debb486f216f8",
+      "manifestSha256": "c60e10e12b7a2bed38404cf440973df902d2f32ab6ca0a12169600d28986d3cc",
+      "stepSha256": "9c4a8affd4f17cdb055f10bdb9883ffbe2f75560984f0daa4db4ee6a41f4e3fa",
       "pcbReleases": []
     },
     "brief": {
       "path": "design/qr_plaque/README.md",
-      "sha256": "f057316450a8a4af5c1511e53016e1a3a93a82fd303b9c04e8e99fbe4575eac7"
+      "sha256": "5c639873065fdc76d924dda4f126f2353ddbfe670d1fdad4aa49b731603a5437"
     },
     "requirement": {
       "artifactContractPath": "product/contract.json",
-      "artifactContractSha256": "0d642418afd21084749f0698da92ee44490853cdc4fda55d978f0bfc5be99651",
+      "artifactContractSha256": "dcb64a155ce65378d9905db5977122438e3adf560cf86ac4ed23e614db087139",
       "designRequirementSha256": "1addf909b9619d05d968ad147123e31320b5c4cc3035a13293c9900d9cc0f447",
       "inputs": [
         {
@@ -49,11 +49,11 @@
         "step"
       ]
     },
-    "stateHash": "2cdfff50df78c1113d8e07d3bfed97fc77c52300838d0dd6eddcac139679159c"
+    "stateHash": "de98226e1b22f93cf452c2fe12848fc85879d5e4954aadd1acfc20b5179be966"
   },
   "buildArtifacts": {
-    "manifestSha256": "c24f90a85ee1d82d945deeaabb572124b18d5082f41d9448d3095393b0d2f155",
-    "stepSha256": "0455ef154f1b2d6b56dc1d78c83c3ced132c70109f01beaac84f71314e38133c"
+    "manifestSha256": "c60e10e12b7a2bed38404cf440973df902d2f32ab6ca0a12169600d28986d3cc",
+    "stepSha256": "9c4a8affd4f17cdb055f10bdb9883ffbe2f75560984f0daa4db4ee6a41f4e3fa"
   },
   "exportAlgorithm": {
     "version": 1,
@@ -65,7 +65,7 @@
   },
   "assetHashes": {},
   "shapeHashes": {
-    "logo": "e0e62340186d8c290b17a38f4a34eeed5b5aee7c197dd5bdb86c50f10310843e",
+    "logo": "407a9efea0ac82bfcfc71e48ebee260fb2599ec06191ba2f5adced0c2d01054a",
     "plaque_body": "3118adab667f8dab99f1a706734c9a6f77c2693523458c12729df4ab2af0ab65"
   },
   "runtime": {
@@ -77,10 +77,10 @@
   },
   "artifacts": [
     {
-      "path": "manufacturing/qr_plaque/releases/export-3b54dd424a005f37ed97fb09d19eb2b5/model.step",
+      "path": "manufacturing/qr_plaque/releases/export-5da219cbfde62eade61c3f322c28237d/model.step",
       "role": "model/step",
-      "sha256": "0455ef154f1b2d6b56dc1d78c83c3ced132c70109f01beaac84f71314e38133c",
-      "sizeBytes": 4734046
+      "sha256": "9c4a8affd4f17cdb055f10bdb9883ffbe2f75560984f0daa4db4ee6a41f4e3fa",
+      "sizeBytes": 4732386
     }
   ],
   "interference": {
@@ -102,9 +102,9 @@
     "algorithm": "hmac-sha256",
     "keyId": "81abdbde9b80e7eed6a5fa6ba4c4c956",
     "projectId": "6c3829a6-1260-4138-bcc7-cede50abaa99",
-    "receiptPath": "manufacturing/qr_plaque/releases/export-3b54dd424a005f37ed97fb09d19eb2b5/receipt.json",
-    "payloadSha256": "eb832ed5980405601520ccffff5b1ccabd5e4f116aa75317ce37691e2aff2677",
-    "mac": "6aa7a84b72d306de2ffc8aca0b9f836625f0f00d4b85ab52991c56430d604717"
+    "receiptPath": "manufacturing/qr_plaque/releases/export-5da219cbfde62eade61c3f322c28237d/receipt.json",
+    "payloadSha256": "5730269f43666348e0492c5c0a3fd418b4d6bf3d2d82e8886a4d31026365cd16",
+    "mac": "0997bb3c9766ab345cdd6a5382548d6b6e6e4b544640b759b96c1a061c54c580"
   },
   "status": "handoff"
 }
