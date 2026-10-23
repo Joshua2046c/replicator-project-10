@@ -1,0 +1,117 @@
+{
+  "designId": "snail_card",
+  "revision": "2a93298e6d745d68265e5bc43136952488a6eb6e630e3301f1863932b593aa24",
+  "schemaVersion": 2,
+  "exportId": "export-2b5b53f89110caca2254103f669da9a4",
+  "generatedAt": "2026-10-22T09:08:55.387Z",
+  "designSha256": "6d8a39ec80247f62c258f1b40d0ccb8b2d7f64b4c6e61e88295cefac4365b097",
+  "role": "lanyard_qr_card",
+  "stateHash": "3ce56152e589139d1acd67f4952e4932208360d25dbbdb01da8f51fe5e9cd9e1",
+  "stateManifest": {
+    "schemaVersion": 3,
+    "designId": "snail_card",
+    "role": "lanyard_qr_card",
+    "design": {
+      "revision": "2a93298e6d745d68265e5bc43136952488a6eb6e630e3301f1863932b593aa24",
+      "designSha256": "7da0db26381316d0c067e22945bd4040a59c6bc57935cc17961ab47b52f2ae66",
+      "manifestSha256": "0bf2ac569cae04f4d6d1b68b489d71b0a7a750444ecbe358c8e05f9466ca31b8",
+      "stepSha256": "4f70271e3da4d20e3fd393256da82683818c418237909d159115dcc29db6bf0a",
+      "pcbReleases": []
+    },
+    "brief": {
+      "path": "design/snail_card/README.md",
+      "sha256": "ffb86af26309e279e45b54e4fd3fd6ddcc62772df5a6f455c6821a8161475dc2"
+    },
+    "requirement": {
+      "artifactContractPath": "product/contract.json",
+      "artifactContractSha256": "6c5f1326bca11a3fac66356c53170c2c68bf6df3b7a7542a939abf8af0911697",
+      "designRequirementSha256": "43e7ac7b933d1d5cf7d01160509ad3a0206d8afba0106b246f471a19ca167ea1",
+      "inputs": [
+        {
+          "role": "external-reference",
+          "id": "snail_name_font",
+          "path": "product/references/snail-name-outlines.svg",
+          "sha256": "8e4fc74cadb7a4b59b1999ba67f3411386961012a0026e8f5ef5bfa2fbd75ecc",
+          "sizeBytes": 4483
+        },
+        {
+          "role": "external-reference",
+          "id": "snail_qr_payload",
+          "path": "product/references/snail-qr-matrix.json",
+          "sha256": "3a738a03d6240da069c28f1b4690d4183f4c9679dea131b313bb933ac8f153dc",
+          "sizeBytes": 1353
+        },
+        {
+          "role": "external-reference",
+          "id": "uploaded_logo",
+          "path": "product/references/uploads/20261021T183231691Z-1-fisfqiktd.jpg",
+          "sha256": "3ed6660f93aff15da70f8fbf1d64b46d7765a9dbd9f5a80a328243b63dcf1bc8",
+          "sizeBytes": 226162
+        }
+      ]
+    },
+    "delivery": {
+      "target": "printable_part",
+      "formats": [
+        "step"
+      ]
+    },
+    "stateHash": "3ce56152e589139d1acd67f4952e4932208360d25dbbdb01da8f51fe5e9cd9e1"
+  },
+  "buildArtifacts": {
+    "manifestSha256": "0bf2ac569cae04f4d6d1b68b489d71b0a7a750444ecbe358c8e05f9466ca31b8",
+    "stepSha256": "4f70271e3da4d20e3fd393256da82683818c418237909d159115dcc29db6bf0a"
+  },
+  "exportAlgorithm": {
+    "version": 1,
+    "bootstrapSha256": "5dd2a543e9cad32f4b7d6303e41a1ed23bd24acea30c3faacc5d72a98b18ff4f"
+  },
+  "sourceHashes": {
+    "card/card": "06c2fdcc685b504f1232562f2dea08679ed3e04d6d3fc18f4fc55dd85f335f3c",
+    "logo_insert/logo_insert": "8932f80c1d576e06258dab39dc8b461a0215fff9c83ad81a63000ee21da8002a"
+  },
+  "assetHashes": {},
+  "shapeHashes": {
+    "card_body": "a97e5d0dceb6a9874be8e1354abb272e492814e7b5a9372aa52ca5ad79e7b6a4",
+    "snail_logo": "1f3a282f6f89da5f47b72a3451198aaa6629e9a98a0c96d063e076bee9d21cfc"
+  },
+  "runtime": {
+    "manifestHash": "ab96ab4a8cb2db98edb9ee2d6904f4abce711776fb5a1af03a7266313006c5d2",
+    "pythonVersion": "3.12.13",
+    "build123dVersion": "0.10.0",
+    "ocpVersion": "7.8.1.1.post1",
+    "cadpyHash": "cc86bceb91ba7b9668854891400ce9ca3f1d372a59aa992460df9d8ed25b89f5"
+  },
+  "artifacts": [
+    {
+      "path": "manufacturing/snail_card/releases/export-2b5b53f89110caca2254103f669da9a4/model.step",
+      "role": "model/step",
+      "sha256": "4f70271e3da4d20e3fd393256da82683818c418237909d159115dcc29db6bf0a",
+      "sizeBytes": 5197647
+    }
+  ],
+  "interference": {
+    "summary": "No interference across 1 object pairs.",
+    "counts": {
+      "objects": 2,
+      "pairs": 1,
+      "exact": 0,
+      "cached": 1,
+      "interference": 0,
+      "undeclared": 0,
+      "over_budget": 0,
+      "undetermined": 0
+    },
+    "overlaps": []
+  },
+  "authority": {
+    "version": 1,
+    "algorithm": "hmac-sha256",
+    "keyId": "81abdbde9b80e7eed6a5fa6ba4c4c956",
+    "projectId": "6c3829a6-1260-4138-bcc7-cede50abaa99",
+    "receiptPath": "manufacturing/snail_card/releases/export-2b5b53f89110caca2254103f669da9a4/receipt.json",
+    "payloadSha256": "683ed20790507498d36494f86dc9543b6bdc8bc5b57ea1a002283888cb7edea5",
+    "mac": "5017d7f2d76b9caa7571ebdb8f95682653619286eff210eb5efbb8fd7dcd87e7"
+  },
+  "status": "handoff"
+}

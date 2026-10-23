@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 2,
+  "coordinateFrame": "replicator-world-z-up",
+  "placements": {
+    "snail_card": {
+      "positionMm": [
+        90,
+        0,
+        0
+      ],
+      "rotationDeg": [
+        0,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ"
+    },
+    "joshua_card": {
+      "positionMm": [
+        180,
+        0,
+        0
+      ],
+      "rotationDeg": [
+        0,
+        0,
+        0
+      ],
+      "rotationOrder": "XYZ"
+    }
+  },
+  "fits": [],
+  "updatedAt": "2026-10-22T14:17:50.102Z"
+}

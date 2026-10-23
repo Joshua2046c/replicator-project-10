@@ -1,0 +1,162 @@
+{
+  "version": 2,
+  "artifact_level": "compatible_set",
+  "deliverable_intent": "printable_part",
+  "summary": "三套独立二维码牌及各自的一体 logo 嵌件：95 mm 原牌、120 × 73.5 mm 蜗牛挂绳卡、同规格李山迎 Joshua 挂绳卡；李山迎新版小红书白字高出红底 0.8 mm。",
+  "required_interfaces": [
+    {
+      "id": "logo_recess",
+      "kind": "internal_fit",
+      "description": "底板凹槽深 0.6 mm；匹配上传 logo 外轮廓，默认每侧间隙 0.2 mm。嵌件底部接触槽底，红底及白字装配后仍高出原牌面 1 mm、1.3 mm。",
+      "source": "user_requested",
+      "required": true
+    },
+    {
+      "id": "snail_logo_recess",
+      "kind": "internal_fit",
+      "description": "蜗牛卡的 logo 凹槽深 0.6 mm，宽 34 mm 的一体 logo 嵌件每侧留 0.2 mm 间隙；红底与白字装好后分别高出牌面 1 mm、1.3 mm。",
+      "source": "contract_interface",
+      "required": true
+    },
+    {
+      "id": "snail_lanyard_slot",
+      "kind": "internal_fit",
+      "description": "卡顶部横向胶囊通孔，总长 18 mm、宽 6 mm，孔边至卡顶默认 5 mm。",
+      "source": "user_requested",
+      "required": true
+    },
+    {
+      "id": "joshua_logo_recess",
+      "kind": "internal_fit",
+      "description": "李山迎挂绳卡的 logo 槽深 0.6 mm，每侧间隙 0.2 mm。红底高出卡面 1 mm，小红书白字高出红底 0.8 mm。",
+      "source": "contract_interface",
+      "required": true
+    },
+    {
+      "id": "joshua_lanyard_slot",
+      "kind": "internal_fit",
+      "description": "同款横向胶囊通孔，总长 18 mm，宽 6 mm，孔边距卡顶 5 mm。",
+      "source": "user_requested",
+      "required": true
+    }
+  ],
+  "external_references": [
+    {
+      "id": "qr_payload",
+      "source": "user_requested",
+      "description": "二维码原样编码 https://xhslink.cn/o/87IIDxzsE72"
+    },
+    {
+      "id": "qr_quiet_zone",
+      "source": "generated_support_geometry",
+      "description": "DENSO WAVE 四模块静区规则 https://www.qrcode.com/en/howto/code.html/index.html"
+    },
+    {
+      "id": "uploaded_logo",
+      "source": "user_requested",
+      "description": "用户上传红底白字小红书 logo，提取轮廓用于分色浮雕",
+      "path": "product/references/uploads/20261021T183231691Z-1-fisfqiktd.jpg"
+    },
+    {
+      "id": "name_font",
+      "source": "generated_support_geometry",
+      "description": "由本机思源黑体 CN Bold 2.004 的真实字形生成固定轮廓；字体名称及 SHA-256 保存在参考资料中",
+      "path": "product/references/sourcehan-name-outlines.svg"
+    },
+    {
+      "id": "snail_qr_payload",
+      "source": "user_requested",
+      "description": "二维码原样编码 https://xhslink.cn/o/6OddDrrLP8h",
+      "path": "product/references/snail-qr-matrix.json"
+    },
+    {
+      "id": "snail_name_font",
+      "source": "generated_support_geometry",
+      "description": "蜗牛的科技笔记，使用本机思源黑体 CN Bold 2.004 的真实字形轮廓",
+      "path": "product/references/snail-name-outlines.svg"
+    },
+    {
+      "id": "joshua_qr_payload",
+      "source": "user_requested",
+      "description": "李山迎原二维码网址 https://xhslink.cn/o/87IIDxzsE72",
+      "path": "product/references/joshua-qr-matrix.json"
+    },
+    {
+      "id": "joshua_name_font",
+      "source": "generated_support_geometry",
+      "description": "李山迎 Joshua，思源黑体 CN Bold 2.004 的真实字形轮廓",
+      "path": "product/references/joshua-name-outlines.svg"
+    }
+  ],
+  "cad": {
+    "requirement": "required",
+    "designs": [
+      {
+        "role": "qr_plaque",
+        "design_id": "qr_plaque",
+        "description": "圆角竖向浮雕二维码牌",
+        "delivery_target": "printable_part",
+        "required_formats": [
+          "step"
+        ],
+        "interface_ids": [
+          "logo_recess"
+        ],
+        "reference_ids": [
+          "qr_payload",
+          "qr_quiet_zone",
+          "uploaded_logo",
+          "name_font"
+        ]
+      },
+      {
+        "role": "lanyard_qr_card",
+        "design_id": "snail_card",
+        "description": "蜗牛的科技笔记挂绳二维码卡与一体 logo 嵌件",
+        "delivery_target": "printable_part",
+        "required_formats": [
+          "step"
+        ],
+        "interface_ids": [
+          "snail_logo_recess",
+          "snail_lanyard_slot"
+        ],
+        "reference_ids": [
+          "uploaded_logo",
+          "snail_qr_payload",
+          "snail_name_font",
+          "qr_quiet_zone"
+        ]
+      },
+      {
+        "role": "joshua_lanyard_card",
+        "design_id": "joshua_card",
+        "description": "李山迎 Joshua 挂绳卡与加高白字的一体 logo 嵌件",
+        "delivery_target": "printable_part",
+        "required_formats": [
+          "step"
+        ],
+        "interface_ids": [
+          "joshua_logo_recess",
+          "joshua_lanyard_slot"
+        ],
+        "reference_ids": [
+          "uploaded_logo",
+          "joshua_qr_payload",
+          "joshua_name_font",
+          "qr_quiet_zone"
+        ]
+      }
+    ]
+  },
+  "open_questions": [],
+  "assembly_story": {
+    "installation": "三套卡牌分别使用各自的一体 logo 嵌件，对齐凹槽嵌入 0.6 mm，少量胶固定。两套 120 mm 挂绳卡可从顶部胶囊孔穿绳。",
+    "maintenance": "固定后为装饰件；拆卸方式取决于实际使用的胶。",
+    "user_access": [
+      "三套二维码面",
+      "各自的 logo 嵌件",
+      "两套挂绳卡的顶部通孔"
+    ]
+  }
+}

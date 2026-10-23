@@ -1,0 +1,272 @@
+{
+  "requirements": {
+    "product_class": {
+      "value": "mechanical",
+      "source": "user"
+    },
+    "form_factor": {
+      "value": "圆角长方形竖向二维码牌",
+      "source": "user"
+    },
+    "line_1": {
+      "value": "用户上传的小红书 logo，按原图轮廓保留红底与白字",
+      "source": "user"
+    },
+    "line_2": {
+      "value": "李山迎 Joshua",
+      "source": "user"
+    },
+    "line_3": {
+      "value": "二维码",
+      "source": "user"
+    },
+    "qr_payload": {
+      "value": "https://xhslink.cn/o/87IIDxzsE72",
+      "source": "user"
+    },
+    "relief_height_mm": {
+      "value": 0.8,
+      "source": "user"
+    },
+    "plate_size_mm": {
+      "value": {
+        "width": 63.33333333333333,
+        "height": 95,
+        "base_thickness": 4
+      },
+      "source": "default"
+    },
+    "corner_radius_mm": {
+      "value": 5.066666666666666,
+      "source": "default"
+    },
+    "color_scheme": {
+      "value": "白底，黑色姓名和二维码；顶部红底白字 logo",
+      "source": "default"
+    },
+    "manufacturing_method": {
+      "value": "FDM 平放制作；红白黑在相同层共存，采用多色打印或打印后按色区涂色",
+      "source": "default"
+    },
+    "base_board": {
+      "value": "不适用：被动式二维码牌，无电子件",
+      "source": "default"
+    },
+    "mounting": {
+      "value": "平板，无支架、无安装孔",
+      "source": "default"
+    },
+    "qr_quiet_zone_modules": {
+      "value": 4,
+      "source": "research"
+    },
+    "relief_scope": {
+      "value": "relief_height_mm 适用于姓名和二维码；logo 使用独立高度",
+      "source": "user"
+    },
+    "logo_red_height_mm": {
+      "value": 1,
+      "source": "user"
+    },
+    "logo_white_height_mm": {
+      "value": 1.3,
+      "source": "user"
+    },
+    "logo_height_datum": {
+      "value": "红色及白字顶面均以底板正面为零基准；白字高于红底 0.3 mm",
+      "source": "default"
+    },
+    "logo_width_mm": {
+      "value": 27.866666666666667,
+      "source": "default"
+    },
+    "logo_colors": {
+      "value": {
+        "background": "red",
+        "letters": "white"
+      },
+      "source": "user"
+    },
+    "name_font": {
+      "value": "思源黑体",
+      "source": "user"
+    },
+    "name_font_variant": {
+      "value": "Source Han Sans CN Bold，粗体",
+      "source": "user"
+    },
+    "name_size_preference": {
+      "value": "随标牌平面等比缩小，并加粗",
+      "source": "user"
+    },
+    "name_width_mm": {
+      "value": 43.32,
+      "source": "default"
+    },
+    "logo_recess_depth_mm": {
+      "value": 0.6,
+      "source": "user"
+    },
+    "logo_recess_clearance_per_side_mm": {
+      "value": 0.2,
+      "source": "default"
+    },
+    "logo_mounting": {
+      "value": "logo 作为独立嵌件，红底向下延伸 0.6 mm 嵌入凹槽，少量胶固定；装好后红底及白字分别高出原牌面 1 mm、1.3 mm",
+      "source": "default"
+    },
+    "plate_height_mm": {
+      "value": 95,
+      "source": "user"
+    },
+    "plate_thickness_mm": {
+      "value": 4,
+      "source": "user"
+    },
+    "planar_scaling": {
+      "value": "宽度、圆角、全部图案的平面尺寸及位置按原版比例随高度缩放；厚度不变",
+      "source": "user"
+    },
+    "qr_symbol_width_mm": {
+      "value": 40.53333333333333,
+      "source": "default"
+    },
+    "logo_body": {
+      "value": "logo 红底和白字合并为一个连续实体，作为一个嵌件",
+      "source": "user"
+    },
+    "snail_card_size_mm": {
+      "value": {
+        "length": 120,
+        "width": 73.5
+      },
+      "source": "user"
+    },
+    "snail_card_thickness_reduction_mm": {
+      "value": 1.5,
+      "source": "user"
+    },
+    "snail_card_base_thickness_mm": {
+      "value": 2.5,
+      "source": "default"
+    },
+    "snail_card_thickness_interpretation": {
+      "value": "按原底板 4 mm 减少 1.5 mm，得到 2.5 mm",
+      "source": "default"
+    },
+    "snail_card_lanyard_slot_mm": {
+      "value": {
+        "overall_length": 18,
+        "width": 6
+      },
+      "source": "user"
+    },
+    "snail_card_name": {
+      "value": "蜗牛的科技笔记",
+      "source": "user"
+    },
+    "snail_card_qr_payload": {
+      "value": "https://xhslink.cn/o/6OddDrrLP8h",
+      "source": "user"
+    },
+    "snail_card_independence": {
+      "value": "新增独立卡与一体 logo 嵌件，在原牌旁边并排摆放",
+      "source": "user"
+    },
+    "snail_card_relief_height_mm": {
+      "value": 0.8,
+      "source": "default"
+    },
+    "snail_card_logo_heights_mm": {
+      "value": {
+        "red_above_card": 1,
+        "white_above_card": 1.3
+      },
+      "source": "default"
+    },
+    "snail_card_layout_mm": {
+      "value": {
+        "slot_center_y": 52,
+        "top_web": 5,
+        "logo_width": 34,
+        "logo_center_y": 37,
+        "text_width": 59,
+        "text_center_y": 22,
+        "qr_width": 52,
+        "qr_center_y": -20,
+        "corner_radius": 6
+      },
+      "source": "default"
+    },
+    "snail_card_font": {
+      "value": "思源黑体 CN Bold",
+      "source": "default"
+    },
+    "snail_card_logo_fit_mm": {
+      "value": {
+        "depth": 0.6,
+        "clearance_per_side": 0.2
+      },
+      "source": "default"
+    },
+    "joshua_card_model": {
+      "value": "另做独立模型，结构及尺寸与蜗牛的科技笔记挂绳卡相同",
+      "source": "user"
+    },
+    "joshua_card_size_mm": {
+      "value": {
+        "length": 120,
+        "width": 73.5,
+        "base_thickness": 2.5
+      },
+      "source": "user"
+    },
+    "joshua_card_name": {
+      "value": "李山迎 Joshua",
+      "source": "user"
+    },
+    "joshua_card_qr_payload": {
+      "value": "https://xhslink.cn/o/87IIDxzsE72",
+      "source": "user"
+    },
+    "joshua_card_logo_letter_relief_mm": {
+      "value": 0.8,
+      "source": "user"
+    },
+    "joshua_card_logo_letter_datum": {
+      "value": "小红书白字相对红底顶面凸起 0.8 mm；红底高出卡面 1 mm，白字高出卡面 1.8 mm",
+      "source": "default"
+    },
+    "joshua_card_relief_height_mm": {
+      "value": 0.8,
+      "source": "default"
+    },
+    "joshua_card_font": {
+      "value": "思源黑体 CN Bold",
+      "source": "default"
+    },
+    "joshua_card_slot_mm": {
+      "value": {
+        "overall_length": 18,
+        "width": 6
+      },
+      "source": "user"
+    },
+    "joshua_card_layout_mm": {
+      "value": {
+        "slot_y": 52,
+        "logo_width": 34,
+        "logo_y": 37,
+        "name_width": 59,
+        "name_y": 22,
+        "qr_width": 52,
+        "qr_y": -20,
+        "corner_radius": 6,
+        "recess_depth": 0.6,
+        "clearance_per_side": 0.2
+      },
+      "source": "default"
+    }
+  },
+  "open_questions": []
+}

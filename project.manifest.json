@@ -1,0 +1,13 @@
+{
+  "formatVersion": 4,
+  "name": "小红书二维码牌",
+  "title": "小红书二维码牌",
+  "summary": "造型精致的个人主页展示牌，可输入网址让其自动替换二维码内容，分为轻便款和加大挂绳款两种",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Miles"
+    }
+  ],
+  "artifacts": "rebuild"
+}

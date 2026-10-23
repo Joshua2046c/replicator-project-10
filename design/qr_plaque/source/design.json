@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "units": "mm",
+  "coordinateFrame": "replicator-world-z-up",
+  "targets": [
+    {
+      "id": "plaque",
+      "label": "plaque",
+      "cells": [
+        {
+          "id": "plaque",
+          "target": "plaque",
+          "order": 0,
+          "path": "design/qr_plaque/source/parts/plaque/000-plaque.py",
+          "sha256": "b6663c4005a9fbcaa831b1add73ae1f5199a48bdb65c8ecdea6f3a5e3cd04a0f"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "logo_insert",
+      "label": "logo_insert",
+      "cells": [
+        {
+          "id": "logo_insert",
+          "target": "logo_insert",
+          "order": 0,
+          "path": "design/qr_plaque/source/parts/logo_insert/000-logo_insert.py",
+          "sha256": "1065b8ef82f10fa40e743615d0934a38504f8c95ecd6ce47632f666ec14cfddc"
+        }
+      ],
+      "dependencies": [
+        "plaque"
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "plaque_body",
+      "target": "plaque",
+      "label": "二维码牌底板",
+      "material": "pla",
+      "kind": "generated",
+      "shapeHash": "3118adab667f8dab99f1a706734c9a6f77c2693523458c12729df4ab2af0ab65",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "logo",
+      "target": "logo_insert",
+      "label": "小红书 Logo",
+      "material": "pla",
+      "kind": "generated",
+      "shapeHash": "e0e62340186d8c290b17a38f4a34eeed5b5aee7c197dd5bdb86c50f10310843e",
+      "transform": {
+        "positionMm": [
+          0,
+          34.2,
+          3.4
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    }
+  ],
+  "assets": [],
+  "fits": [],
+  "updatedAt": "2026-10-21T23:55:51.780Z",
+  "parameters": {
+    "plaque": {
+      "plate_height": 95,
+      "plate_thickness": 4,
+      "relief_height": 0.8,
+      "logo_recess_depth": 0.6,
+      "logo_recess_clearance": 0.2
+    },
+    "logo_insert": {
+      "logo_red_height": 1,
+      "logo_white_height": 1.3
+    }
+  }
+}

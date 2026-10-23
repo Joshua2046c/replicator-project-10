@@ -1,0 +1,95 @@
+from build123d import import_svg
+from io import StringIO
+card_length = param("card_length", 120.0)
+card_width = param("card_width", 73.5)
+card_thickness = param("card_thickness", 2.5)
+corner_radius = param("corner_radius", 6.0)
+relief_height = param("relief_height", 0.8)
+slot_length = param("slot_length", 18.0)
+slot_width = param("slot_width", 6.0)
+slot_y = param("slot_y", 52.0)
+logo_width = param("logo_width", 34.0)
+logo_y = param("logo_y", 37.0)
+name_width = param("name_width", 59.0)
+name_y = param("name_y", 22.0)
+qr_width = param("qr_width", 52.0)
+qr_y = param("qr_y", -20.0)
+logo_recess_depth = param("logo_recess_depth", 0.6)
+logo_recess_clearance = param("logo_recess_clearance", 0.2)
+recess_floor_z = card_thickness - logo_recess_depth
+connection_inventory = {"joshua_logo_recess":"free:clearance_pocket","joshua_lanyard_slot":"free:capsule_through_hole"}
+assert set(connection_inventory) == {"joshua_logo_recess","joshua_lanyard_slot"}
+assert 0 < 2*corner_radius < min(card_length,card_width)
+assert 0 < slot_width < slot_length < card_width
+assert 0 < logo_recess_depth < card_thickness
+assert logo_recess_clearance > 0
+base = extrude(RectangleRounded(card_width,card_length,corner_radius), amount=card_thickness)
+# SlotOverall uses the full end-to-end 18 mm dimension, with 6 mm diameter end arcs.
+slot_profile = SlotOverall(slot_length,slot_width)
+slot = Pos(0,slot_y,0) * extrude(slot_profile,amount=card_thickness)
+assert abs(slot.bounding_box().size.X-slot_length) < 0.00001
+assert abs(slot.bounding_box().size.Y-slot_width) < 0.00001
+assert slot.bounding_box().max.Y < card_length/2
+base = base - slot
+# uploaded_logo and joshua_name_font: immutable vector outlines, embedded for portable builds.
+logo_svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"2265\" height=\"889\" viewBox=\"0 0 2265 889\"><path id=\"logo_red\" fill=\"#ff2442\" d=\"M0,423 L0,462 L6,518 L14,555 L30,608 L42,639 L58,671 L84,711 L110,743 L150,782 L178,803 L214,825 L262,849 L303,865 L337,875 L391,885 L432,888 L1850,887 L1909,879 L1951,868 L1988,855 L2019,841 L2056,821 L2093,798 L2116,780 L2142,755 L2165,729 L2189,697 L2207,668 L2218,646 L2231,613 L2245,571 L2255,530 L2261,493 L2264,455 L2263,418 L2257,368 L2248,328 L2233,281 L2218,243 L2203,214 L2178,176 L2149,141 L2123,115 L2089,87 L2059,68 L2009,42 L1975,28 L1922,12 L1864,2 L1829,0 L534,0 L414,1 L350,10 L330,15 L328,17 L326,16 L274,34 L251,44 L202,70 L169,91 L147,109 L119,136 L98,160 L76,189 L60,214 L46,241 L34,270 L20,312 L11,346 L4,385 Z\"/><path id=\"logo_white_0\" fill=\"white\" fill-rule=\"evenodd\" d=\"M805,743 L828,749 L848,751 L989,750 L1049,632 L914,632 L893,629 L870,621 L852,652 Z\"/><path id=\"logo_white_1\" fill=\"white\" fill-rule=\"evenodd\" d=\"M661,279 L660,287 L680,524 L687,564 L698,604 L712,640 L729,672 L746,696 L775,627 L803,571 L806,568 L795,538 L791,513 L773,280 Z\"/><path id=\"logo_white_2\" fill=\"white\" fill-rule=\"evenodd\" d=\"M386,279 L267,278 L264,280 L244,521 L240,542 L230,566 L297,696 L319,665 L335,635 L347,605 L361,559 L367,517 L377,411 L383,325 L388,282 Z\"/><path id=\"logo_white_3\" fill=\"white\" fill-rule=\"evenodd\" d=\"M1145,160 L1145,278 L1221,278 L1223,280 L1223,631 L1109,632 L1049,750 L1458,751 L1459,633 L1340,631 L1340,282 L1342,279 L1418,279 L1419,160 Z\"/><path id=\"logo_white_4\" fill=\"white\" fill-rule=\"evenodd\" d=\"M1984,174 L1965,162 L1948,158 L1938,158 L1922,162 L1912,167 L1900,177 L1890,192 L1885,212 L1885,277 L1947,277 L1958,275 L1975,268 L1990,255 L2000,235 L2002,210 L1998,195 L1993,185 Z\"/><path id=\"logo_white_5\" fill=\"white\" fill-rule=\"evenodd\" d=\"M950,120 L848,329 L842,351 L842,364 L846,376 L855,386 L863,391 L882,396 L952,397 L893,514 L884,537 L882,549 L883,562 L890,576 L898,583 L906,587 L922,591 L1048,592 L1098,494 L1042,493 L1033,490 L1029,486 L1027,478 L1083,371 L1128,279 L1014,279 L1009,283 L1000,298 L995,297 L987,289 L986,284 L1067,121 Z\"/><path id=\"logo_white_6\" fill=\"white\" fill-rule=\"evenodd\" d=\"M580,120 L462,120 L462,650 L388,651 L389,665 L394,688 L399,703 L408,719 L419,731 L429,738 L444,745 L459,749 L476,751 L503,749 L524,743 L542,733 L558,718 L563,711 L572,693 L579,667 Z\"/><path id=\"logo_white_7\" fill=\"white\" fill-rule=\"evenodd\" d=\"M1497,160 L1496,278 L1570,278 L1573,280 L1573,377 L1571,379 L1459,379 L1458,491 L1573,493 L1573,751 L1690,751 L1690,522 L1691,494 L1693,492 L1852,492 L1870,499 L1879,509 L1885,528 L1884,649 L1771,650 L1772,666 L1779,688 L1792,710 L1809,727 L1835,742 L1855,748 L1877,751 L1913,749 L1941,741 L1965,727 L1981,711 L1989,699 L1997,682 L2001,666 L2001,469 L1995,448 L1987,432 L1976,417 L1955,399 L1936,389 L1916,382 L1900,379 L1866,378 L1864,376 L1864,281 L1862,262 L1854,231 L1840,207 L1826,193 L1811,182 L1792,172 L1778,167 L1743,160 L1693,159 L1691,153 L1691,120 L1574,119 L1573,158 L1571,160 Z M1692,278 L1737,278 L1747,283 L1750,287 L1753,297 L1753,375 L1750,379 L1693,379 L1691,377 Z\"/></svg>"
+name_svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"6784\" height=\"1400\" viewBox=\"0 -1100 6784 1400\"><path id=\"char_0\" d=\"M435 -850V-756H53V-645H310C234 -578 130 -521 25 -489C50 -466 85 -422 102 -393C228 -439 348 -521 435 -621V-452H557V-621C646 -523 768 -442 895 -398C912 -428 947 -474 974 -497C866 -527 759 -581 680 -645H949V-756H557V-850ZM437 -283V-240H50V-132H437V-41C437 -28 432 -25 413 -24C394 -23 322 -23 261 -26C280 3 306 53 314 86C391 86 450 84 495 68C542 50 556 20 556 -37V-132H951V-240H556V-242C642 -280 727 -327 795 -374L721 -441L695 -435H222V-332H542C508 -313 471 -296 437 -283Z\" fill=\"black\"/><path id=\"char_1\" d=\"M1093 -633V17H1786V88H1911V-637H1786V-107H1562V-842H1436V-107H1217V-633Z\" fill=\"black\"/><path id=\"char_2\" d=\"M2054 -729C2115 -689 2192 -629 2227 -588L2304 -668C2266 -709 2188 -765 2126 -801ZM2271 -507H2043V-397H2154V-113C2113 -92 2069 -58 2028 -17L2106 91C2149 31 2197 -31 2228 -31C2250 -31 2283 -1 2323 24C2392 63 2473 75 2595 75C2702 75 2861 70 2936 64C2938 32 2956 -26 2969 -59C2867 -44 2702 -35 2599 -35C2491 -35 2403 -40 2338 -80C2309 -97 2288 -112 2271 -122ZM2345 -152C2368 -168 2404 -182 2597 -236C2593 -261 2590 -309 2592 -342L2461 -310V-689C2512 -707 2564 -728 2610 -753V-66H2719V-687H2826V-281C2826 -269 2822 -265 2810 -265C2799 -265 2765 -265 2732 -266C2746 -239 2761 -194 2765 -165C2823 -165 2865 -167 2896 -184C2928 -201 2936 -229 2936 -278V-788H2610V-771L2540 -848C2493 -814 2418 -775 2349 -749V-335C2349 -286 2315 -253 2292 -238C2310 -219 2336 -177 2345 -152Z\" fill=\"black\"/><path id=\"char_4\" d=\"M3479 14C3638 14 3708 -100 3708 -239V-741H3560V-251C3560 -149 3526 -114 3461 -114C3419 -114 3379 -137 3351 -191L3250 -116C3299 -29 3372 14 3479 14Z\" fill=\"black\"/><path id=\"char_5\" d=\"M4108 14C4248 14 4377 -94 4377 -280C4377 -466 4248 -574 4108 -574C3967 -574 3839 -466 3839 -280C3839 -94 3967 14 4108 14ZM4108 -106C4031 -106 3989 -174 3989 -280C3989 -385 4031 -454 4108 -454C4184 -454 4227 -385 4227 -280C4227 -174 4184 -106 4108 -106Z\" fill=\"black\"/><path id=\"char_6\" d=\"M4660 14C4805 14 4883 -64 4883 -163C4883 -266 4801 -304 4727 -332C4667 -354 4616 -369 4616 -410C4616 -442 4640 -464 4691 -464C4732 -464 4771 -444 4811 -416L4877 -505C4831 -541 4768 -574 4687 -574C4559 -574 4478 -503 4478 -403C4478 -309 4557 -266 4628 -239C4687 -216 4745 -197 4745 -155C4745 -120 4720 -96 4664 -96C4611 -96 4564 -119 4514 -157L4447 -64C4503 -18 4585 14 4660 14Z\" fill=\"black\"/><path id=\"char_7\" d=\"M4995 0H5142V-385C5183 -426 5213 -448 5258 -448C5313 -448 5337 -418 5337 -331V0H5484V-349C5484 -490 5432 -574 5311 -574C5235 -574 5179 -534 5135 -492L5142 -597V-798H4995Z\" fill=\"black\"/><path id=\"char_8\" d=\"M5802 14C5879 14 5932 -24 5980 -81H5984L5995 0H6115V-560H5968V-182C5930 -132 5900 -112 5855 -112C5800 -112 5775 -142 5775 -229V-560H5629V-211C5629 -70 5681 14 5802 14Z\" fill=\"black\"/><path id=\"char_9\" d=\"M6409 14C6474 14 6530 -17 6578 -60H6583L6593 0H6713V-327C6713 -489 6640 -574 6498 -574C6410 -574 6330 -540 6265 -500L6317 -402C6369 -433 6419 -456 6471 -456C6540 -456 6564 -414 6566 -359C6341 -335 6244 -272 6244 -153C6244 -57 6309 14 6409 14ZM6458 -101C6415 -101 6384 -120 6384 -164C6384 -215 6429 -252 6566 -268V-156C6531 -121 6500 -101 6458 -101Z\" fill=\"black\"/></svg>"
+logo_shapes = import_svg(StringIO(logo_svg),align=None)
+red_profile = Compound(children=[s for s in logo_shapes if s.label == "logo_red"])
+white_profile = Compound(children=[s for s in logo_shapes if s.label.startswith("logo_white_")])
+assert len(red_profile.faces()) == 1 and len(white_profile.faces()) == 8
+logo_scale = logo_width/red_profile.bounding_box().size.X
+red_profile = scale(red_profile,by=logo_scale)
+white_profile = scale(white_profile,by=logo_scale)
+logo_bb = red_profile.bounding_box()
+profile_origin = Pos(-(logo_bb.min.X+logo_bb.max.X)/2,-(logo_bb.min.Y+logo_bb.max.Y)/2)
+red_profile = profile_origin*red_profile
+white_profile = profile_origin*white_profile
+recess_profile = offset(red_profile,amount=logo_recess_clearance,kind=Kind.ARC)
+pocket = Pos(0,logo_y,recess_floor_z)*extrude(recess_profile,amount=logo_recess_depth)
+assert pocket.bounding_box().max.Y < slot.bounding_box().min.Y
+base = base - pocket
+name_profile = Compound(children=import_svg(StringIO(name_svg)))
+name_profile = scale(name_profile,by=name_width/name_profile.bounding_box().size.X)
+name_bb = name_profile.bounding_box()
+name_profile = Pos(-(name_bb.min.X+name_bb.max.X)/2,name_y-(name_bb.min.Y+name_bb.max.Y)/2)*name_profile
+name = Pos(0,0,card_thickness)*extrude(name_profile,amount=relief_height)
+assert abs(name.bounding_box().size.X-name_width) < 0.00001
+assert name.bounding_box().max.Y < pocket.bounding_box().min.Y
+# joshua_qr_payload: v3-Q matrix, generated and independently decoded using OpenCV.
+qr_rows = ["11111110011110101001101111111","10000010101110001000101000001","10111010101010111011001011101","10111010010111110101101011101","10111010001110110001001011101","10000010010101101101001000001","11111110101010101010101111111","00000000011000010100100000000","01110110010111110110100000110","00100101110001111101101011101","01001011100101010110101100010","10011101111101010001100011001","10110010000000100100010100111","10001001010111000101001101101","11010011011111000101011111011","11111101101100010000001011001","00101010100101010111110011000","00110101001010001101101000100","10100110110111110010101101100","00000001001000110110111011100","01001010101101001110111111101","00000000101110100011100011011","11111110010111001111101010110","10000010101100111010100010000","10111010011010001110111111101","10111010110100010011000011001","10111010101101000110100100101","10000010100100101010011010010","11111110001101100011110100010"]
+module_count = len(qr_rows)
+module_pitch = qr_width/module_count
+quiet_zone = 4*module_pitch
+assert qr_width+2*quiet_zone < card_width
+assert abs(qr_y)+qr_width/2+quiet_zone < card_length/2
+assert name.bounding_box().min.Y > qr_y+qr_width/2+quiet_zone
+features = [name]
+for r,row in enumerate(qr_rows):
+    c = 0
+    while c < module_count:
+        if row[c] == "0":
+            c += 1
+            continue
+        end = c+1
+        while end < module_count and row[end] == "1":
+            end += 1
+        x = -qr_width/2+(c+end)*module_pitch/2
+        y = qr_y+qr_width/2-(r+0.5)*module_pitch
+        features.append(Pos(x,y,card_thickness)*Box((end-c)*module_pitch,module_pitch,relief_height,align=(Align.CENTER,Align.CENTER,Align.MIN)))
+        c = end
+card = base.fuse(*features)
+assert len(card.solids()) == 1
+assert abs(card.bounding_box().size.X-card_width) < 0.00001
+assert abs(card.bounding_box().size.Y-card_length) < 0.00001
+assert abs(card.bounding_box().size.Z-card_thickness-relief_height) < 0.00001
+card.color = srgb("#faf8f3")
+for face in card.faces():
+    bb = face.bounding_box()
+    if bb.min.Z >= card_thickness-0.00001:
+        face.color = srgb("#161616")
+print("Card width, length, thickness, relief:",card_width,card_length,card_thickness,relief_height)
+print("Slot overall dimensions:",slot.bounding_box().size.X,slot.bounding_box().size.Y)
+print("Top web:",card_length/2-slot_y-slot_width/2)
+print("QR pitch, quiet zone:",module_pitch,quiet_zone)
+publish("card_body",card,"李山迎挂绳卡",material="pla")

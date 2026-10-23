@@ -1,0 +1,117 @@
+{
+  "designId": "joshua_card",
+  "revision": "d388283b68c289f40c30b189bc8ca57333337b257444773b307e1a696e58b61a",
+  "schemaVersion": 2,
+  "exportId": "export-f8134717f77c2f944dc94c3884a46695",
+  "generatedAt": "2026-10-22T14:16:09.467Z",
+  "designSha256": "fce22f1623cc913115fd80974241559d5f121488369a3a5c77bac7a571f972f7",
+  "role": "joshua_lanyard_card",
+  "stateHash": "09a85619423828f465476e081312b30340f2a671b5b35c10942e62c36c2051df",
+  "stateManifest": {
+    "schemaVersion": 3,
+    "designId": "joshua_card",
+    "role": "joshua_lanyard_card",
+    "design": {
+      "revision": "d388283b68c289f40c30b189bc8ca57333337b257444773b307e1a696e58b61a",
+      "designSha256": "b1e7727c148c8b7fdfba2bbcef2ce54417a487462c21d600ed92d215d271dcbd",
+      "manifestSha256": "5b55d39c0c9294a8789dccfea8c06d5beb67e9400fe352d0be7fdcf63e2e9a45",
+      "stepSha256": "eee682613a27fe694c63bd1025781b71f6d3a91884a6636867193f6783be5ea3",
+      "pcbReleases": []
+    },
+    "brief": {
+      "path": "design/joshua_card/README.md",
+      "sha256": "534ea506a39cd0ec07f1db5658f7727522491ec576aeb733b8c5e5e7851fc686"
+    },
+    "requirement": {
+      "artifactContractPath": "product/contract.json",
+      "artifactContractSha256": "9f843a984bafc0b9f03934da0a8bf2558d5db418ae4ccb30048f93f3d778ea1d",
+      "designRequirementSha256": "cb82516da274031dcd89a3e520cb94e86ce9ab25aacc1118fc38ec18c1cb66ba",
+      "inputs": [
+        {
+          "role": "external-reference",
+          "id": "joshua_name_font",
+          "path": "product/references/joshua-name-outlines.svg",
+          "sha256": "f2a2aa3c7e03781034d6c36a796d616bb5d3536f6403d80c168318bd6e6edc25",
+          "sizeBytes": 3200
+        },
+        {
+          "role": "external-reference",
+          "id": "joshua_qr_payload",
+          "path": "product/references/joshua-qr-matrix.json",
+          "sha256": "fad55b4d27dcf80b4c23a8ea77cf8bd589a76c344b25de4af863e978a25a7580",
+          "sizeBytes": 1353
+        },
+        {
+          "role": "external-reference",
+          "id": "uploaded_logo",
+          "path": "product/references/uploads/20261021T183231691Z-1-fisfqiktd.jpg",
+          "sha256": "3ed6660f93aff15da70f8fbf1d64b46d7765a9dbd9f5a80a328243b63dcf1bc8",
+          "sizeBytes": 226162
+        }
+      ]
+    },
+    "delivery": {
+      "target": "printable_part",
+      "formats": [
+        "step"
+      ]
+    },
+    "stateHash": "09a85619423828f465476e081312b30340f2a671b5b35c10942e62c36c2051df"
+  },
+  "buildArtifacts": {
+    "manifestSha256": "5b55d39c0c9294a8789dccfea8c06d5beb67e9400fe352d0be7fdcf63e2e9a45",
+    "stepSha256": "eee682613a27fe694c63bd1025781b71f6d3a91884a6636867193f6783be5ea3"
+  },
+  "exportAlgorithm": {
+    "version": 1,
+    "bootstrapSha256": "5dd2a543e9cad32f4b7d6303e41a1ed23bd24acea30c3faacc5d72a98b18ff4f"
+  },
+  "sourceHashes": {
+    "card/card": "e1a936bcd738c22f5e77eed5b622b479fe548dd6ff90d67a32268c8cd3d9a259",
+    "logo_insert/logo_insert": "75143b42aa9957d49dcb4017c08d52c4d711d17431dd10b440e26741993fbfdb"
+  },
+  "assetHashes": {},
+  "shapeHashes": {
+    "card_body": "822e97fcf2542e9ca468e8c8aa7734215dae451921825b9e6d7dc5b650eafb1f",
+    "joshua_logo": "3aae6a15fe68ea378f76fc95d95e8708dce08e7662a949ce79f268c84bbeace9"
+  },
+  "runtime": {
+    "manifestHash": "ab96ab4a8cb2db98edb9ee2d6904f4abce711776fb5a1af03a7266313006c5d2",
+    "pythonVersion": "3.12.13",
+    "build123dVersion": "0.10.0",
+    "ocpVersion": "7.8.1.1.post1",
+    "cadpyHash": "cc86bceb91ba7b9668854891400ce9ca3f1d372a59aa992460df9d8ed25b89f5"
+  },
+  "artifacts": [
+    {
+      "path": "manufacturing/joshua_card/releases/export-f8134717f77c2f944dc94c3884a46695/model.step",
+      "role": "model/step",
+      "sha256": "eee682613a27fe694c63bd1025781b71f6d3a91884a6636867193f6783be5ea3",
+      "sizeBytes": 4751885
+    }
+  ],
+  "interference": {
+    "summary": "No interference across 1 object pairs.",
+    "counts": {
+      "objects": 2,
+      "pairs": 1,
+      "exact": 0,
+      "cached": 1,
+      "interference": 0,
+      "undeclared": 0,
+      "over_budget": 0,
+      "undetermined": 0
+    },
+    "overlaps": []
+  },
+  "authority": {
+    "version": 1,
+    "algorithm": "hmac-sha256",
+    "keyId": "81abdbde9b80e7eed6a5fa6ba4c4c956",
+    "projectId": "6c3829a6-1260-4138-bcc7-cede50abaa99",
+    "receiptPath": "manufacturing/joshua_card/releases/export-f8134717f77c2f944dc94c3884a46695/receipt.json",
+    "payloadSha256": "4a9d4d4937d017479bc5e76817696b4431f0df36f064a4e131309e400ed08eaa",
+    "mac": "5c1654cc8ef92791ac29b13f484ce0098d646f41938b8caaad04a92586daea4a"
+  },
+  "status": "handoff"
+}

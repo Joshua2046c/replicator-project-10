@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "units": "mm",
+  "coordinateFrame": "replicator-world-z-up",
+  "targets": [
+    {
+      "id": "card",
+      "label": "card",
+      "cells": [
+        {
+          "id": "card",
+          "target": "card",
+          "order": 0,
+          "path": "design/snail_card/source/parts/card/000-card.py",
+          "sha256": "06c2fdcc685b504f1232562f2dea08679ed3e04d6d3fc18f4fc55dd85f335f3c"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "logo_insert",
+      "label": "logo_insert",
+      "cells": [
+        {
+          "id": "logo_insert",
+          "target": "logo_insert",
+          "order": 0,
+          "path": "design/snail_card/source/parts/logo_insert/000-logo_insert.py",
+          "sha256": "8932f80c1d576e06258dab39dc8b461a0215fff9c83ad81a63000ee21da8002a"
+        }
+      ],
+      "dependencies": [
+        "card"
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "card_body",
+      "target": "card",
+      "label": "蜗牛挂绳卡",
+      "material": "pla",
+      "kind": "generated",
+      "shapeHash": "a97e5d0dceb6a9874be8e1354abb272e492814e7b5a9372aa52ca5ad79e7b6a4",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "snail_logo",
+      "target": "logo_insert",
+      "label": "蜗牛卡 Logo",
+      "material": "pla",
+      "kind": "generated",
+      "shapeHash": "1f3a282f6f89da5f47b72a3451198aaa6629e9a98a0c96d063e076bee9d21cfc",
+      "transform": {
+        "positionMm": [
+          0,
+          37,
+          1.9
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    }
+  ],
+  "assets": [],
+  "fits": [],
+  "updatedAt": "2026-10-22T09:08:55.387Z",
+  "parameters": {
+    "card": {
+      "card_length": 120,
+      "card_width": 73.5,
+      "card_thickness": 2.5,
+      "corner_radius": 6,
+      "relief_height": 0.8,
+      "slot_length": 18,
+      "slot_width": 6,
+      "slot_y": 52,
+      "logo_width": 34,
+      "logo_y": 37,
+      "name_width": 59,
+      "name_y": 22,
+      "qr_width": 52,
+      "qr_y": -20,
+      "logo_recess_depth": 0.6,
+      "logo_recess_clearance": 0.2
+    },
+    "logo_insert": {
+      "logo_red_height": 1,
+      "logo_white_height": 1.3
+    }
+  }
+}

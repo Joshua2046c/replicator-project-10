@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "units": "mm",
+  "coordinateFrame": "replicator-world-z-up",
+  "targets": [
+    {
+      "id": "card",
+      "label": "card",
+      "cells": [
+        {
+          "id": "card",
+          "target": "card",
+          "order": 0,
+          "path": "design/joshua_card/source/parts/card/000-card.py",
+          "sha256": "e1a936bcd738c22f5e77eed5b622b479fe548dd6ff90d67a32268c8cd3d9a259"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "logo_insert",
+      "label": "logo_insert",
+      "cells": [
+        {
+          "id": "logo_insert",
+          "target": "logo_insert",
+          "order": 0,
+          "path": "design/joshua_card/source/parts/logo_insert/000-logo_insert.py",
+          "sha256": "75143b42aa9957d49dcb4017c08d52c4d711d17431dd10b440e26741993fbfdb"
+        }
+      ],
+      "dependencies": [
+        "card"
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "card_body",
+      "target": "card",
+      "label": "李山迎挂绳卡",
+      "material": "pla",
+      "kind": "generated",
+      "shapeHash": "822e97fcf2542e9ca468e8c8aa7734215dae451921825b9e6d7dc5b650eafb1f",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "joshua_logo",
+      "target": "logo_insert",
+      "label": "李山迎卡 Logo",
+      "material": "pla",
+      "kind": "generated",
+      "shapeHash": "3aae6a15fe68ea378f76fc95d95e8708dce08e7662a949ce79f268c84bbeace9",
+      "transform": {
+        "positionMm": [
+          0,
+          37,
+          1.9
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    }
+  ],
+  "assets": [],
+  "fits": [],
+  "updatedAt": "2026-10-22T14:16:09.467Z",
+  "parameters": {
+    "card": {
+      "card_length": 120,
+      "card_width": 73.5,
+      "card_thickness": 2.5,
+      "corner_radius": 6,
+      "relief_height": 0.8,
+      "slot_length": 18,
+      "slot_width": 6,
+      "slot_y": 52,
+      "logo_width": 34,
+      "logo_y": 37,
+      "name_width": 59,
+      "name_y": 22,
+      "qr_width": 52,
+      "qr_y": -20,
+      "logo_recess_depth": 0.6,
+      "logo_recess_clearance": 0.2
+    },
+    "logo_insert": {
+      "logo_red_height": 1,
+      "logo_letter_relief": 0.8
+    }
+  }
+}
