@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "models": [
+    {
+      "file": "models/joshua_card.glb",
+      "design": "joshua_card"
+    }
+  ]
+}

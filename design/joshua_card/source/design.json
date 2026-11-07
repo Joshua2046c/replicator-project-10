@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "units": "mm",
-  "coordinateFrame": "replicator-world-z-up",
+  "coordinateFrame": "makit-world-z-up",
   "targets": [
     {
       "id": "card",
@@ -41,7 +41,7 @@
       "label": "李山迎挂绳卡",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "822e97fcf2542e9ca468e8c8aa7734215dae451921825b9e6d7dc5b650eafb1f",
+      "shapeHash": "4782f7f7062fd68edca53a16455f3d9319f1d40c1a5271a9671d0e4265ff9580",
       "transform": {
         "positionMm": [
           0,
@@ -68,7 +68,7 @@
       "label": "李山迎卡 Logo",
       "material": "pla",
       "kind": "generated",
-      "shapeHash": "60712603fbc64b6cd3a725b9d5aaae17acc6778ffd7abd1a9812640518a4bf4d",
+      "shapeHash": "763801878ae77d1a0a87a7defd67dc331112c4455fcd85120a89f09ffc9719a8",
       "transform": {
         "positionMm": [
           0,
@@ -92,7 +92,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-10-23T12:33:37.864Z",
+  "updatedAt": "2026-11-07T14:55:18.839Z",
   "parameters": {
     "card": {
       "card_length": 120,
