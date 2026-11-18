@@ -4,11 +4,6 @@
     {
       "file": "image.jpg",
       "kind": "photo"
-    },
-    {
-      "file": "cover-iso.jpg",
-      "kind": "render",
-      "generated": true
     }
   ]
 }
